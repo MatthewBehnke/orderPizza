@@ -9,7 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button addPerson;
-    Button restart;
+    Button settings;
     Button calculate;
 
     @Override
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         addPerson = findViewById(R.id.createPerson);
-        restart = findViewById(R.id.reset);
+        settings = findViewById(R.id.settings);
         calculate = findViewById(R.id.calculate);
     }
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void setRestart(View v) {
+    public void setSettings(View v) {
 
     }
 
