@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">OrderPizza</string>
+    <string name="title_activity_caculate">Caculate</string>
 </resources>
