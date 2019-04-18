@@ -6,11 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     Button addPerson;
     Button settings;
     Button calculate;
+
+    ArrayList orders;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +24,15 @@ public class MainActivity extends AppCompatActivity {
         addPerson = findViewById(R.id.createPerson);
         settings = findViewById(R.id.settings);
         calculate = findViewById(R.id.calculate);
+
+        orders = new ArrayList<pizzaSlice>();
+        orders.add(new pizzaSlice("test",1,23));
+
     }
 
 
     public void setAddPerson(View v) {
-        Intent intent = new Intent(this, AddPerson.class);
+        Intent intent = new Intent(this, AddOrder.class);
         startActivity(intent);
     }
 

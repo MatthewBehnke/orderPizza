@@ -13,7 +13,7 @@
             android:name=".Caculate"
             android:label="@string/title_activity_caculate"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".AddPerson" />
+        <activity android:name=".AddOrder" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
